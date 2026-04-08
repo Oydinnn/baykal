@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme{
+  --color-osnovnoy-tekst: #686868;
+  --color-aksentnyy: #2f70d9;
+  --color-cvet-cta:#d95845;
+}
+
+.link{
+  @apply text-[20px] tracking-wide text-osnovnoy-tekst"
+}
+
+.extra::after{
+  display: flex;
+  content: url('./images/Выделение.png');
+}
