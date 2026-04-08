@@ -7,10 +7,12 @@
 }
 
 .link{
-  @apply text-[20px] tracking-wide text-osnovnoy-tekst"
+  @apply text-[20px] tracking-wide text-osnovnoy-tekst
 }
 
 .extra::after{
-  display: flex;
   content: url('./images/Выделение.png');
+  display: flex;
+  margin-top: -5px;
+  margin-left: -5px;
 }

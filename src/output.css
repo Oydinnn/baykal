@@ -9,8 +9,10 @@
       "Courier New", monospace;
     --spacing: 0.25rem;
     --font-weight-extrabold: 800;
+    --tracking-wide: 0.025em;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-osnovnoy-tekst: #686868;
     --color-aksentnyy: #2f70d9;
   }
 }
@@ -217,6 +219,18 @@
     color: var(--color-aksentnyy);
   }
 }
+.link {
+  font-size: 20px;
+  --tw-tracking: var(--tracking-wide);
+  letter-spacing: var(--tracking-wide);
+  color: var(--color-osnovnoy-tekst);
+}
+.extra::after {
+  content: url('./images/Выделение.png');
+  display: flex;
+  margin-top: -5px;
+  margin-left: -5px;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -226,11 +240,16 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-tracking: initial;
     }
   }
 }
